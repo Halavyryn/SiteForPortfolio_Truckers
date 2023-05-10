@@ -26,5 +26,58 @@ body{
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  background-color: black;
+  color: #FFFFFF;
+}
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header{
+  background: #C8A35F;
+}
+.header__contacts{
+  background: #C8A35F;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  padding:16px;
+}
+.lang{
+  display: flex;
+  gap:10px;
+}
+.top{
+    background: #2F343A;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-span{
+  height:46px;
+  border: 1px solid #F2F2F2;
+  transform: rotate(0deg);
+  margin: 27px 36px;
+}
+
+.map-img{
+  float: left;
+  padding-right: 17px;
+}
+.menu{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap:40px;
+  text-transform: uppercase;
 }
