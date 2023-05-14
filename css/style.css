@@ -34,12 +34,19 @@ body{
   margin: 0 auto;
   padding: 0 10px;
 }
+.title{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+}
 .line{
   display: block;
   position: absolute;
   width: 90px;
   height: 6px;
-
   background-color: #C8A35F;
 }
 .header{
@@ -135,11 +142,6 @@ body{
 }
 .europe__titles-title{
   padding-top: 130px;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 49px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 .europe__titles-text{
   padding-top: 15px;
@@ -274,23 +276,21 @@ p:hover .arrow:after {
     transform-origin: 0% 100%;
 }
 
+.services{
+  position: relative;
+}
 .services__line{
   margin-top: 120px;
 }
 .services__title{
   padding-top: 166px;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 49px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+
 }
 .transport__block{
   padding-top: 55px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(4,1fr);
-
+  grid-template-rows: repeat(2,1fr);
 }
 .transport__block-item{
   display: flex;
@@ -322,5 +322,27 @@ p:hover .arrow:after {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-
+}
+.company{
+  position: relative;
+  margin-top: 120px;
+}
+.company__line{
+  top: 80px;
+}
+.company__inner{
+  display: flex;
+}
+.company__title{
+  padding-top: 126px;
+}
+.company__text{
+  padding-top: 30px;
+  font-size: 16px;
+  line-height: 23px;
+  width: 445px;
+  height: 179px;
+}
+.company__block{
+  display: flex;
 }
