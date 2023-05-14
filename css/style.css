@@ -134,7 +134,7 @@ body{
   position: relative;
   flex: 1 1 365px;
   z-index: 2;
-  background: green;
+  /*background: green;*/
   /*background: #393F47;*/
 }
 .europe__line{
@@ -176,7 +176,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: green;
+  /*background: green;*/
 }
 /* рисование стрелки */
 
@@ -337,12 +337,51 @@ p:hover .arrow:after {
   padding-top: 126px;
 }
 .company__text{
-  padding-top: 30px;
+  padding-top: 20px;
   font-size: 16px;
   line-height: 23px;
   width: 445px;
   height: 179px;
+  margin-right: 65px;
 }
 .company__block{
-  display: flex;
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+}
+.company__block-item{
+  width: 200px;
+  height: 160px;
+  background: #FFFFFF;
+  border: 0.25px solid #C8A35F;
+  text-align: center;
+  color: #000000;
+}
+.company__block-item-num{
+  padding-top: 23px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2F343A;
+}
+.company__block-item-title{
+    font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+
+}
+.company__block-item-text{
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.maps{
+  margin-top: 200px;
+  min-width: 1140px;
+  height: 450px;
+  background: linear-gradient(to top, rgba(57, 63, 71, 0.6), rgba(57, 63, 71, 0.6)), url("../images/maps.jpg");
 }
