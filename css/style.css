@@ -385,3 +385,31 @@ p:hover .arrow:after {
   height: 450px;
   background: linear-gradient(to top, rgba(57, 63, 71, 0.6), rgba(57, 63, 71, 0.6)), url("../images/maps.jpg");
 }
+.footer{
+  background: #C8A35F;
+}
+.footer__inner{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__address-location{
+  font-weight: 400;
+  color: #F2F2F2;
+  opacity: 0.8;
+  padding-bottom: 10px;
+}
+.footer__address-email{
+  color: #2F343A;
+}
+.footer__tel a{
+  display:block;
+  color: #F2F2F2;
+  padding-bottom: 10px;
+}
+
+.footer__developer-link{
+  display: block;
+  color: #2F343A;
+}
