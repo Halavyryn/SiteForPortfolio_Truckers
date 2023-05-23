@@ -383,7 +383,10 @@ p:hover .arrow:after {
   margin-top: 200px;
   min-width: 1140px;
   height: 450px;
+  opacity: 0.6;
+ /*
   background: linear-gradient(to top, rgba(57, 63, 71, 0.6), rgba(57, 63, 71, 0.6)), url("../images/maps.jpg");
+*/
 }
 .footer{
   background: #C8A35F;
