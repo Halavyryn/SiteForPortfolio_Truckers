@@ -14,3 +14,14 @@ function topFunction() {
     document.body.scrollTo({ top: 0, behavior: "smooth" });// For Safari
     document.documentElement.scrollTo({ top: 0, behavior: "smooth" }); // For Chrome, Firefox, IE and Opera
 }
+
+
+/*Function for Popup*/
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}

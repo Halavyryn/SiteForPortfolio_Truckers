@@ -176,7 +176,6 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*background: green;*/
 }
 /* рисование стрелки */
 
@@ -429,7 +428,7 @@ p:hover .arrow:after {
   padding-bottom: 10px;
 }
 
-  #footer__creator-link{
+#footer__creator-link{
   text-decoration-line:underline;
   color: #2F343A;
 }

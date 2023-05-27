@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Грузовые перевозки</title>
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_js.css">
+
+  <script src="jquery-3.7.0.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -81,9 +84,10 @@
           <p class="europe__titles-text">
             Страны Евросоюза, а также Украина, Белоруссия со всеми документами.
           </p>
-          <button class="europe__titles-btn " type="button">
+          <button class="europe__titles-btn" type="button" onclick="openPopup()">
             ПОДРОБНЕЕ
           </button>
+
         </div>
         <div class="europe__tracker">
           <img class="europe__tracker-img" src="images/track.png" alt="" >
@@ -213,7 +217,22 @@
       </div>
     </div>
   </footer>
+
+
+  <!--Animation for site-->
+  <!--Popup for Button-->
+  <div class="popup__container">
+    <div class="popup" id="popup">
+      <h2>Сдесь могла быть ваша реклама!</h2>
+      <p>За подробностями обратись к администратору сайта</p>
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
+  </div>
+  <!--Button for Go to Top-->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Наверх</button>
+
+ <!-- Added scripts-->
+
   <script src="js/script.js"></script>
 </body>
 </html>
