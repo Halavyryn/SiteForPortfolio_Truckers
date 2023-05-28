@@ -95,6 +95,16 @@ body{
   gap: 40px;
   text-transform: uppercase;
 }
+
+.menu-item li{
+    cursor: pointer;
+}
+
+.menu-item a:hover{
+    /*background: #C8A35F;*/
+    text-decoration: underline;
+}
+
 .trucking{
   background-image: url("../images/bg-trucking.jpg");
   background-repeat: no-repeat;
@@ -285,50 +295,49 @@ p:hover .arrow:after {
   padding-top: 166px;
 
 }
+
 .transport__block{
-  padding-top: 55px;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(2,1fr);
+    padding-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
 }
 .transport__block-item{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 276px;
-  height: 180px;
-  border: 1px solid #393F47;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 276px;
+    height: 180px;
+    border: 1px solid #393F47;
+    cursor: pointer;
 }
+
 .transport__block-item-active{
-  background: #C8A35F;
+    background: #C8A35F;
 }
-.transport__block-img{
-  width: 50px;
-  height: 50px;
-  padding: 10px;
+svg{
+   fill:white;
+   padding: 10px;
 }
 
 .transport__block-item-active .transport__block-img {
+    fill: #2F343A;
     background-image: url("../images/bg-airplane.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
 .transport__block-text{
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
-/*
-.transport__block-item-active .transport__block-text{
-    padding-top: 10px;
-}
-*/
+
+
 
 .company{
   position: relative;

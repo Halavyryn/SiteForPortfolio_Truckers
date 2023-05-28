@@ -25,3 +25,23 @@ function openPopup(){
 function closePopup(){
     popup.classList.remove("open-popup");
 }
+
+
+/*Function for transport__block*/
+let parent = document.querySelector('.transport__block');
+let menuItem = parent.querySelectorAll('.transport__block-item');
+
+parent.addEventListener('click', (event) => {
+    // Отлавливаем элемент в родители на который мы нажали
+    let target = event.target;
+
+    // Проверяем тот ли это элемент который нам нужен
+    if(target.classList.contains('transport__block-item')) {
+        for(let i = 0; i < menuItem.length; i++) {
+            // Убираем у других
+            menuItem[i].classList.remove('transport__block-item-active');
+        }
+        // Добавляем тому на который нажали
+        target.classList.add('transport__block-item-active');
+    }
+});
