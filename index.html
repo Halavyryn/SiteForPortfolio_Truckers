@@ -74,41 +74,66 @@
     </div>
   </section>
   <section class="europe">
-    <div class="container">
-      <div class="europe__inner">
-        <div class="europe__titles">
-          <span class="line europe__line"></span>
-          <h1 class="title europe__titles-title">
-            грузоперевозки по европе
-          </h1>
-          <p class="europe__titles-text">
-            Страны Евросоюза, а также Украина, Белоруссия со всеми документами.
-          </p>
-          <button class="europe__titles-btn" type="button" onclick="openPopup()">
-            ПОДРОБНЕЕ
-          </button>
+      <div class="container">
+          <div class="europe__inner">
+              <div class="europe__titles">
+                  <span class="line europe__line"></span>
+                  <h1 class="title europe__titles-title">
+                      грузоперевозки по европе
+                  </h1>
+                  <p class="europe__titles-text">
+                      Страны Евросоюза, а также Украина,<br> Белоруссия со всеми документами.
+                  </p>
+                  <button class="europe__titles-btn" type="button" onclick="openPopup()">
+                      ПОДРОБНЕЕ
+                  </button>
 
-        </div>
-        <div class="europe__tracker">
-          <img class="europe__tracker-img" src="images/track.png" alt="" >
-        </div>
-        <div class="europe__arrows">
-          <div class="arrow-right">
-            <p>след<span class="arrow"></span></p>
+              </div>
+              <div class="europe__tracker">
+
+                  <input type="radio" name="images" id="i1" checked>
+                  <input type="radio" name="images" id="i2">
+                  <input type="radio" name="images" id="i3">
+
+                  <div class="slide_img" id="one">
+                      <img src="images/track.png">
+                      <label for="i3" class="pre">
+                          <img class="label__image" src="images/services__next.png" alt="">
+                      </label>
+                      <label for="i2" class="nxt">
+                          <img class="label__image" src="images/services__back.png" alt="">
+                      </label>
+                  </div>
+
+                  <div class="slide_img" id="two">
+                      <img src="images/track1.png">
+                      <label for="i1" class="pre">
+                          <img class="label__image" src="images/services__next.png" alt="">
+                      </label>
+                      <label for="i3" class="nxt">
+                          <img class="label__image" src="images/services__back.png" alt="">
+                      </label>
+                  </div>
+
+                  <div class="slide_img" id="three">
+                      <img src="images/track2.png">
+                      <label for="i2" class="pre">
+                          <img class="label__image" src="images/services__next.png" alt="">
+                      </label>
+                      <label for="i1" class="nxt">
+                          <img class="label__image" src="images/services__back.png" alt="">
+                      </label>
+                  </div>
+              </div>
           </div>
-          <div class="arrow-left">
-            <p><span class="arrow"></span>Назад</p>
-          </div>
-        </div>
       </div>
-    </div>
   </section>
   <section class="services" id="services">
     <div class="container">
       <span class="line services__line"></span>
       <h2 class="title services__title">услуги</h2>
       <div class="transport__block">
-       
+
         <div class="transport__block-item transport__block-item-active">
           <svg class="transport__block-img" width="50px" height="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="0 0 122.88 122.88" style="enable-background:new 0 0 122.88 122.88;" xml:space="preserve">
