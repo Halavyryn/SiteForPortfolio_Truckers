@@ -1,19 +1,19 @@
 @font-face {
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto';
 src: url("../fonts/Roboto-Regular.ttf") format("ttf");
 font-weight: 400;
 font-style: normal;
 font-display: swap;
 }
 @font-face {
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto';
 src: url("../fonts/Roboto-Bold.ttf") format("ttf");
 font-weight: 700;
 font-style: normal;
 font-display: swap;
 }
 @font-face {
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto';
 src: url("../fonts/Roboto-Medium.ttf") format("ttf");
 font-weight: 500;
 font-style: normal;
@@ -423,15 +423,22 @@ svg{
   font-size: 12px;
   line-height: 14px;
 }
-.maps{
-  margin-top: 200px;
-  min-width: 1140px;
-  height: 450px;
-  opacity: 0.6;
- /*
+.maps {
+    margin-top: 200px;
+    min-width: 1140px;
+    height: 450px;
+    opacity: 0.6;
+    /*
   background: linear-gradient(to top, rgba(57, 63, 71, 0.6), rgba(57, 63, 71, 0.6)), url("../images/maps.jpg");
 */
 }
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+}
+
+
 .footer{
   background: #C8A35F;
 }
@@ -468,4 +475,14 @@ svg{
 #footer__creator-link{
   text-decoration-line:underline;
   color: #2F343A;
+}
+@media (max-width: 375px){
+    .header__contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+
 }
