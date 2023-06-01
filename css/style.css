@@ -91,7 +91,10 @@ label{
   float: left;
   padding-right: 17px;
 }
-.menu{
+
+
+
+.nav-menu{
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -99,14 +102,32 @@ label{
   text-transform: uppercase;
 }
 
-.menu-item li{
+.nav-item li{
     cursor: pointer;
 }
 
-.menu-item a:hover{
+.nav-item a:hover{
     /*background: #C8A35F;*/
     text-decoration: underline;
 }
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
 
 .trucking{
   background-image: url("../images/bg-trucking.jpg");
@@ -438,7 +459,6 @@ iframe {
     height: 450px;
 }
 
-
 .footer{
   background: #C8A35F;
 }
@@ -476,13 +496,62 @@ iframe {
   text-decoration-line:underline;
   color: #2F343A;
 }
-@media (max-width: 375px){
-    .header__contacts{
+
+
+/*Media*/
+@media (max-width: 850px){
+    .hamburger{
+        padding-left: 20px;
+        display: block;
+    }
+    /*delaet X*/
+    .hamburger_active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger_active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger_active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 105px;
+        flex-direction: column;
+        gap: 0;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu_active{
+        left: 0;
+    }
+}
+@media (max-width: 340px){
+  .header__contacts{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
+        font-size: 18px;
     }
-
-
+    .logo{
+        padding-left: 50px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logo-span{
+        display: none;
+    }
+    .map{
+        text-align: left;
+    }
 }

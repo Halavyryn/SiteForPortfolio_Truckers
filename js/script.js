@@ -26,6 +26,21 @@ function closePopup(){
     popup.classList.remove("open-popup");
 }
 
+/*Burger menu*/
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click",()=>{
+    hamburger.classList.toggle("hamburger_active");
+    navMenu.classList.toggle("nav-menu_active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n =>
+    n.addEventListener("click",()=>{
+        hamburger.classList.remove("hamburger_active");
+        navMenu.classList.remove("nav-menu_active");
+    }))
+
 
 /*Function for transport__block*/
 let parent = document.querySelector('.transport__block');
@@ -45,3 +60,4 @@ parent.addEventListener('click', (event) => {
         target.classList.add('transport__block-item-active');
     }
 });
+
