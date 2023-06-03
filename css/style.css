@@ -152,8 +152,7 @@ label{
   letter-spacing: 0.05em;
 }
 .trucking__subtitle{
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding:25px 10px 40px 10px ;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
@@ -238,8 +237,9 @@ label{
 }
 /* рисование стрелки */
 
-.arrow-right p {
-    position: relative;
+.arrow-right p, .arrow-left p {
+   position: relative;
+  /*  position: absolute;*/
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
@@ -253,7 +253,7 @@ label{
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
-    text-align: right;
+    text-align: left;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #C8A35F;
@@ -499,6 +499,24 @@ iframe {
 
 
 /*Media*/
+
+@media (max-width: 1000px) {
+
+    .arrow-left p {
+        top: 235px;
+        right: -30px;
+    }
+
+}
+@media (max-width: 900px) {
+
+    .arrow-left p {
+        top: 200px;
+        right: -70px;
+    }
+
+}
+
 @media (max-width: 850px){
     .hamburger{
         padding-left: 20px;
@@ -532,8 +550,69 @@ iframe {
     .nav-menu_active{
         left: 0;
     }
+
+    .europe__inner{
+        height: initial;
+        display: flex;
+        flex-direction: column;
+    }
+    .europe__titles{
+        align-self: center;
+        flex: auto;
+    }
+    .europe__tracker{
+        padding-top: 0;
+    }
+    .arrow-left p {
+        top: 265px;
+        right: 0;
+    }
 }
-@media (max-width: 340px){
+
+@media (max-width: 653px){
+    .europe__titles{
+        text-align: center;
+    }
+    .europe__titles-title{
+        font-size: 32px;
+    }
+    .arrow-left p {
+        top: 265px;
+        right: -20px;
+    }
+}
+
+@media (max-width: 600px){
+    .arrow-left p {
+        top: 200px;
+        right: -40px;
+    }
+}
+
+@media (max-width: 500px){
+    .arrow-left p {
+        top: 180px;
+        right: -60px;
+    }
+}
+
+
+@media (max-width: 450px){
+    .trucking__titles{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .trucking__title{
+        font-size:26px;
+        line-height: 32px;
+    }
+    .arrow-left p {
+        top: 150px;
+        right: -80px;
+    }
+}
+
+@media (max-width: 375px){
   .header__contacts{
         display: flex;
         flex-direction: column;
@@ -553,5 +632,41 @@ iframe {
     }
     .map{
         text-align: left;
+        padding-bottom: 15px;
     }
+    .map-link{
+        font-size: 20px;
+    }
+
+    .europe__arrows{
+        padding-left: 0;
+
+    }
+    .arrow {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 80px;
+        width: 35px;
+        height: 3px;
+        background-color: #C8A35F;
+    }
+
+    .arrow-left p {
+        top: 130px;
+        right: 0;
+    }
+    .arrow-left .arrow {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: -65px;
+        width: 35px;
+        height: 3px;
+        background-color: #C8A35F;
+    }
+    .pre, .nxt{
+        font-size: 12px;
+    }
+
 }
