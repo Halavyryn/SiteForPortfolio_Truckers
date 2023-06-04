@@ -29,6 +29,7 @@ body{
   color: #FFFFFF;
   background: #2F343A;
 
+
 }
 .container{
   max-width: 1140px;
@@ -207,7 +208,7 @@ label{
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .slide_img img{
@@ -223,6 +224,7 @@ label{
 
 .slide_img{
     z-index: -1;
+    visibility: visible;
 }
 #i1:checked ~ #one,
 #i2:checked ~ #two,
@@ -337,6 +339,7 @@ p:hover .arrow:after {
 
 .services{
   position: relative;
+
 }
 .services__line{
   margin-top: 120px;
@@ -509,6 +512,18 @@ iframe {
         top: 235px;
         right: 60px;
     }
+
+    .transport__block {
+        padding-top: 55px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+
+    }
+    .transport__block-item{
+      width: 100%;
+    }
+
 }
 @media (max-width: 1000px) {
   .arrow-left p {
@@ -566,12 +581,28 @@ iframe {
         align-self: center;
         flex: auto;
     }
+
     .europe__tracker{
         padding-top: 0;
+        flex: 1 1 100px;
+        background: #2F343A;
+        position: relative;
+
     }
     .arrow-left p {
         top: 265px;
         right: 60px;
+    }
+    .europe__line{
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .services__line{
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .services__title{
+        text-align: center;
     }
 }
 
@@ -581,6 +612,13 @@ iframe {
     }
     .europe__titles-title{
         font-size: 32px;
+    }
+
+    .transport__block {
+        padding-top: 55px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
     }
 }
 
@@ -628,6 +666,20 @@ iframe {
         top: 150px;
         right: 30px;
     }
+
+    .transport__block {
+        padding-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(8,1fr);
+        align-content: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .transport__block-item{
+        border: 1px solid #C8A35F;
+    }
+
 }
 
 @media (max-width: 375px){
@@ -682,6 +734,7 @@ iframe {
     .pre, .nxt{
         font-size: 12px;
     }
+
 }
 @media (max-width: 281px){
     .arrow-left p {
