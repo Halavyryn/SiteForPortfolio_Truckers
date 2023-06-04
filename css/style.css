@@ -28,11 +28,12 @@ body{
   line-height: 16px;
   color: #FFFFFF;
   background: #2F343A;
+
 }
 .container{
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 label{
     display: inline-block;
@@ -194,7 +195,7 @@ label{
 }
 .europe__tracker{
     padding-top: 120px;
-    flex: 1 1 695px;
+    flex: 1 1 700px;
     background: #2F343A;
     position: relative;
 }
@@ -499,22 +500,27 @@ iframe {
 
 
 /*Media*/
+@media (max-width: 1120px) {
 
-@media (max-width: 1000px) {
-
+    .europe__arrows {
+        padding-left: 0;
+    }
     .arrow-left p {
         top: 235px;
-        right: -30px;
+        right: 60px;
     }
-
+}
+@media (max-width: 1000px) {
+  .arrow-left p {
+        top: 235px;
+        right: 30px;
+    }
 }
 @media (max-width: 900px) {
-
     .arrow-left p {
         top: 200px;
-        right: -70px;
+        right: 0;
     }
-
 }
 
 @media (max-width: 850px){
@@ -565,7 +571,7 @@ iframe {
     }
     .arrow-left p {
         top: 265px;
-        right: 0;
+        right: 60px;
     }
 }
 
@@ -576,23 +582,35 @@ iframe {
     .europe__titles-title{
         font-size: 32px;
     }
-    .arrow-left p {
-        top: 265px;
-        right: -20px;
-    }
 }
 
 @media (max-width: 600px){
     .arrow-left p {
         top: 200px;
-        right: -40px;
+        right: 40px;
     }
 }
 
 @media (max-width: 500px){
+
+    .arrow{
+        width: 45px;
+        left: 55px;
+    }
+    .arrow-left .arrow{
+        width: 45px;
+        left: -55px;
+    }
+    .arrow-left .arrow:after, .arrow-left .arrow:before {
+        right: 30px;
+    }
+
     .arrow-left p {
-        top: 180px;
-        right: -60px;
+        top: 200px;
+        right: 60px;
+    }
+    .pre, .nxt{
+        font-size: 12px;
     }
 }
 
@@ -608,7 +626,7 @@ iframe {
     }
     .arrow-left p {
         top: 150px;
-        right: -80px;
+        right: 30px;
     }
 }
 
@@ -638,35 +656,40 @@ iframe {
         font-size: 20px;
     }
 
-    .europe__arrows{
-        padding-left: 0;
-
-    }
     .arrow {
         display: block;
         position: absolute;
         top: 10px;
-        left: 80px;
+        left: 95px;
         width: 35px;
         height: 3px;
-        background-color: #C8A35F;
-    }
-
-    .arrow-left p {
-        top: 130px;
-        right: 0;
     }
     .arrow-left .arrow {
         display: block;
         position: absolute;
         top: 10px;
-        left: -65px;
+        left: -95px;
         width: 35px;
         height: 3px;
-        background-color: #C8A35F;
+    }
+    .arrow-left p {
+        top: 130px;
+        right: -15px;
+    }
+    .arrow-left .arrow:after, .arrow-left .arrow:before {
+        right: 20px;
     }
     .pre, .nxt{
         font-size: 12px;
     }
-
+}
+@media (max-width: 281px){
+    .arrow-left p {
+        top: 150px;
+        right: -40px;
+    }
+    .europe__titles-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
