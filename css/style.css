@@ -768,12 +768,12 @@ svg{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(6,1fr);
     }
-
 }
 
-@media (max-width: 414px){
+@media (max-width: 414px) {
     .nav-menu {
         top: 145px;
+    }
 }
 
 @media (max-width: 375px){
@@ -872,7 +872,6 @@ svg{
     .footer__tel{
         font-size: 12px;
     }
-
 }
 
 
