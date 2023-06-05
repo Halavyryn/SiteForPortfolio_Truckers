@@ -29,7 +29,6 @@ body{
   color: #FFFFFF;
   background: #2F343A;
 
-
 }
 .container{
   max-width: 1140px;
@@ -421,7 +420,7 @@ svg{
 
 }
 .company__block-item{
-  width: 200px;
+  width: 198px;
   height: 160px;
   background: #FFFFFF;
   border: 0.25px solid #C8A35F;
@@ -450,17 +449,9 @@ svg{
 }
 .maps {
     margin-top: 200px;
-    min-width: 1140px;
-    height: 450px;
-    opacity: 0.6;
-    /*
-  background: linear-gradient(to top, rgba(57, 63, 71, 0.6), rgba(57, 63, 71, 0.6)), url("../images/maps.jpg");
-*/
-}
-iframe {
-    position: absolute;
     width: 100%;
     height: 450px;
+    opacity: 0.6;
 }
 
 .footer{
@@ -518,10 +509,18 @@ iframe {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(3,1fr);
-
     }
     .transport__block-item{
       width: 100%;
+    }
+    .company__inner{
+        display: flex;
+    }
+    .company__block {
+       margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
 }
@@ -529,6 +528,23 @@ iframe {
   .arrow-left p {
         top: 235px;
         right: 30px;
+    }
+    .company__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .company__block {
+        padding-top: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        align-self: start;
+    }
+
+    .company__text {
+        width: 100%;
     }
 }
 @media (max-width: 900px) {
@@ -557,7 +573,7 @@ iframe {
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 105px;
+        top: 145px;
         flex-direction: column;
         gap: 0;
         background-color: #262626;
@@ -572,6 +588,12 @@ iframe {
         left: 0;
     }
 
+    .trucking {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
     .europe__inner{
         height: initial;
         display: flex;
@@ -584,7 +606,7 @@ iframe {
 
     .europe__tracker{
         padding-top: 0;
-        flex: 1 1 100px;
+        flex: 1 1 270px;
         background: #2F343A;
         position: relative;
 
@@ -593,17 +615,35 @@ iframe {
         top: 265px;
         right: 60px;
     }
-    .europe__line{
+    .line{
         left:50%;
         transform:translateX(-50%);
     }
-    .services__line{
-        left:50%;
-        transform:translateX(-50%);
-    }
+
     .services__title{
         text-align: center;
     }
+
+    .titles{
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .company__text{
+        width: 100%;
+    }
+    p.company__text{
+
+        padding-bottom: 15px;
+    }
+    .company__block{
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .maps {
+        margin-top: 40px;
+    }
+
 }
 
 @media (max-width: 653px){
@@ -620,12 +660,49 @@ iframe {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,1fr);
     }
+
+    .company__block {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+   .company__text {
+        display: inline-block;
+        padding-bottom: 40px;
+    }
 }
 
 @media (max-width: 600px){
     .arrow-left p {
         top: 200px;
         right: 40px;
+    }
+    .footer__inner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer__logo-link{
+        display: inline-block;
+    }
+    .footer__address{
+        text-align: right;
+    }
+    .footer__logo{
+        grid-column: span 2;
+        grid-row: 1/1;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__tel{
+        padding-left: 0;
+    }
+    .footer__creator{
+        text-align: center;
     }
 }
 
@@ -679,7 +756,24 @@ iframe {
     .transport__block-item{
         border: 1px solid #C8A35F;
     }
+    .europe__tracker{
+        padding-top: 0;
+        flex: 1 1 180px;
+        background: #2F343A;
+        position: relative;
+    }
+    .company__block {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);
+    }
 
+}
+
+@media (max-width: 414px){
+    .nav-menu {
+        top: 145px;
 }
 
 @media (max-width: 375px){
@@ -708,6 +802,10 @@ iframe {
         font-size: 20px;
     }
 
+   .nav-menu {
+      top: 234px;
+   }
+
     .arrow {
         display: block;
         position: absolute;
@@ -734,15 +832,47 @@ iframe {
     .pre, .nxt{
         font-size: 12px;
     }
-
+    .maps {
+        margin-top: 20px;
+    }
 }
 @media (max-width: 281px){
+    .nav-menu {
+        top: 246px;
+    }
+    .trucking {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .arrow {
+        left: 65px;
+    }
     .arrow-left p {
-        top: 150px;
-        right: -40px;
+        top: 100px;
+        right: -15px;
+    }
+    .arrow-left .arrow {
+        left: -65px;
     }
     .europe__titles-title {
         font-size: 24px;
         line-height: 28px;
     }
+    .transport__block {
+        padding-top: 15px;
+        gap: 5px;
+    }
+    .services__title {
+        padding-top: 126px;
+    }
+    .services__line {
+        margin-top: 86px;
+    }
+
+    .footer__tel{
+        font-size: 12px;
+    }
+
 }
+
+
