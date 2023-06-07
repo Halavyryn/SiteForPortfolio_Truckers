@@ -465,7 +465,10 @@ svg{
     height: 450px;
     opacity: 0.6;
 }
-
+iframe{
+    width: 100%;
+    height: 450px;
+}
 .footer{
   background: #C8A35F;
 }
