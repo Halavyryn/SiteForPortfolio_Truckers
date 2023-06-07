@@ -82,6 +82,10 @@ label{
   justify-content: space-between;
   align-items: center;
 }
+.logo-img, .footer__logo-img{
+    width: 160px;
+    height: 46px;
+}
 .logo-span{
   height:46px;
   border: 1px solid #F2F2F2;
@@ -365,7 +369,7 @@ p:hover .arrow:after {
     height: 180px;
     border: 1px solid #393F47;
     cursor: pointer;
-
+    background: #393F47;
 }
 
 
