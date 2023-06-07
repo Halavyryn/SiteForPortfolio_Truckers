@@ -29,6 +29,7 @@ body{
   color: #FFFFFF;
   background: #2F343A;
 
+
 }
 .container{
   max-width: 1140px;
@@ -353,8 +354,9 @@ p:hover .arrow:after {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
+
 }
-.transport__block-item{
+.transport__block-item {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -363,7 +365,9 @@ p:hover .arrow:after {
     height: 180px;
     border: 1px solid #393F47;
     cursor: pointer;
+
 }
+
 
 .transport__block-item-active{
     background: #C8A35F;
@@ -371,8 +375,12 @@ p:hover .arrow:after {
 svg{
    fill:white;
    padding: 10px;
+    pointer-events: none;
 }
-
+.transport__block-text {
+    display: inline-block;
+    pointer-events: none;
+}
 .transport__block-item-active .transport__block-img {
     fill: #2F343A;
     background-image: url("../images/bg-airplane.png");
@@ -586,6 +594,7 @@ svg{
     }
     .nav-menu_active{
         left: 0;
+        z-index: 999;
     }
 
     .trucking {
@@ -633,7 +642,6 @@ svg{
         width: 100%;
     }
     p.company__text{
-
         padding-bottom: 15px;
     }
     .company__block{
@@ -664,12 +672,13 @@ svg{
     .company__block {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
     }
 
    .company__text {
         display: inline-block;
         padding-bottom: 40px;
+       margin: 0;
     }
 }
 
@@ -774,6 +783,10 @@ svg{
     .nav-menu {
         top: 145px;
     }
+    .arrow-left p {
+
+        right: 20px;
+    }
 }
 
 @media (max-width: 375px){
@@ -810,7 +823,7 @@ svg{
         display: block;
         position: absolute;
         top: 10px;
-        left: 95px;
+        left: 70px;
         width: 35px;
         height: 3px;
     }
@@ -818,13 +831,13 @@ svg{
         display: block;
         position: absolute;
         top: 10px;
-        left: -95px;
+        left: -70px;
         width: 35px;
         height: 3px;
     }
     .arrow-left p {
         top: 130px;
-        right: -15px;
+        right: 0;
     }
     .arrow-left .arrow:after, .arrow-left .arrow:before {
         right: 20px;
