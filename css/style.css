@@ -1,3 +1,4 @@
+/*Connecting a fonts*/
 @font-face {
 font-family: 'Roboto';
 src: url("../fonts/Roboto-Regular.ttf") format("ttf");
@@ -20,6 +21,10 @@ font-style: normal;
 font-display: swap;
 }
 
+
+/*users style*/
+
+/*general classes*/
 body{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -28,25 +33,26 @@ body{
   line-height: 16px;
   color: #FFFFFF;
   background: #2F343A;
-
-
 }
+
 .container{
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
 label{
     display: inline-block;
 }
+
 .title{
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-
 }
+
 .line{
   display: block;
   position: absolute;
@@ -54,6 +60,9 @@ label{
   height: 6px;
   background-color: #C8A35F;
 }
+
+
+/*section header*/
 .header{
   background: #C8A35F;
 }
@@ -71,7 +80,6 @@ label{
   display: flex;
   gap:10px;
 }
-
 .nav{
   display: flex;
   justify-content: space-between;
@@ -92,14 +100,10 @@ label{
   transform: rotate(0deg);
   margin: 27px 36px;
 }
-
 .map-img{
   float: left;
   padding-right: 17px;
 }
-
-
-
 .nav-menu{
   display: flex;
   justify-content:space-between;
@@ -107,19 +111,15 @@ label{
   gap: 40px;
   text-transform: uppercase;
 }
-
 .nav-item li{
     cursor: pointer;
 }
-
 .nav-item a:hover{
-    /*background: #C8A35F;*/
     text-decoration: underline;
 }
 .nav-link{
     transition: 0.7s ease;
 }
-
 .hamburger{
     display: none;
     cursor: pointer;
@@ -135,6 +135,7 @@ label{
 }
 
 
+/*section trucking*/
 .trucking{
   background-image: url("../images/bg-trucking.jpg");
   background-repeat: no-repeat;
@@ -166,6 +167,8 @@ label{
   margin: 0 auto;
 }
 
+
+/*section europe*/
 .europe__inner{
     display: flex;
     height: 521px;
@@ -207,14 +210,12 @@ label{
 #i1, #i2, #i3{
     display: none;
 }
-
 .slide_img{
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
-
 .slide_img img{
     grid-column: span 2;
     grid-row: span 2;
@@ -225,7 +226,6 @@ label{
     z-index: 99;
     cursor: pointer;
 }
-
 .slide_img{
     z-index: -1;
     visibility: visible;
@@ -235,15 +235,14 @@ label{
 #i3:checked ~ #three{
     z-index: 9;
 }
-
 .europe__arrows {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 70px;
 }
-/* рисование стрелки */
 
+/* рисование стрелки */
 .arrow-right p, .arrow-left p {
    position: relative;
   /*  position: absolute;*/
@@ -300,13 +299,11 @@ label{
     transform: rotate(45deg);
     transform-origin: 100% 0;
 }
-
 p:hover .arrow,
 p:hover .arrow:before,
 p:hover .arrow:after {
     background-color: #000;
 }
-
 .arrow-left .arrow {
     display: block;
     position: absolute;
@@ -341,24 +338,25 @@ p:hover .arrow:after {
     transform-origin: 0 100%;
 }
 
+
+/*section services*/
 .services{
   position: relative;
-
 }
 .services__line{
   margin-top: 120px;
 }
 .services__title{
   padding-top: 166px;
-
 }
 
+
+/*section transport*/
 .transport__block{
     padding-top: 55px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
-
 }
 .transport__block-item {
     display: flex;
@@ -371,8 +369,6 @@ p:hover .arrow:after {
     cursor: pointer;
     background: #393F47;
 }
-
-
 .transport__block-item-active{
     background: #C8A35F;
 }
@@ -402,7 +398,7 @@ svg{
 }
 
 
-
+/*section company*/
 .company{
   position: relative;
   margin-top: 120px;
@@ -449,16 +445,18 @@ svg{
   color: #2F343A;
 }
 .company__block-item-title{
-    font-size: 18px;
+  font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.05em;
-
 }
 .company__block-item-text{
   padding-top: 10px;
   font-size: 12px;
   line-height: 14px;
 }
+
+
+/*section maps*/
 .maps {
     margin-top: 200px;
     width: 100%;
@@ -469,6 +467,9 @@ iframe{
     width: 100%;
     height: 450px;
 }
+
+
+/*section footer*/
 .footer{
   background: #C8A35F;
 }
@@ -501,7 +502,6 @@ iframe{
   color: #F2F2F2;
   padding-bottom: 10px;
 }
-
 #footer__creator-link{
   text-decoration-line:underline;
   color: #2F343A;
@@ -511,6 +511,7 @@ iframe{
 /*Media*/
 @media (max-width: 1120px) {
 
+    /*section europe*/
     .europe__arrows {
         padding-left: 0;
     }
@@ -519,6 +520,7 @@ iframe{
         right: 60px;
     }
 
+    /*section transport*/
     .transport__block {
         padding-top: 55px;
         display: grid;
@@ -528,6 +530,8 @@ iframe{
     .transport__block-item{
       width: 100%;
     }
+
+    /*section company*/
     .company__inner{
         display: flex;
     }
@@ -537,13 +541,17 @@ iframe{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
-
 }
+
 @media (max-width: 1000px) {
-  .arrow-left p {
+
+    /*section europe*/
+    .arrow-left p {
         top: 235px;
         right: 30px;
     }
+
+    /*section company*/
     .company__inner{
         display: flex;
         flex-direction: column;
@@ -557,12 +565,15 @@ iframe{
         grid-template-rows: repeat(2,1fr);
         align-self: start;
     }
-
     .company__text {
         width: 100%;
     }
 }
+
+
 @media (max-width: 900px) {
+
+    /*section europe*/
     .arrow-left p {
         top: 200px;
         right: 0;
@@ -570,6 +581,21 @@ iframe{
 }
 
 @media (max-width: 850px){
+
+    /*general section line*/
+    .titles{
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    /*general section line*/
+    .line{
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    /*section top*/
     .hamburger{
         padding-left: 20px;
         display: block;
@@ -584,7 +610,6 @@ iframe{
     .hamburger_active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-
     .nav-menu{
         position: fixed;
         left: -100%;
@@ -604,12 +629,13 @@ iframe{
         z-index: 999;
     }
 
+    /*section trucking*/
     .trucking {
         padding-top: 50px;
         padding-bottom: 50px;
     }
 
-
+    /*section europe*/
     .europe__inner{
         height: initial;
         display: flex;
@@ -619,32 +645,23 @@ iframe{
         align-self: center;
         flex: auto;
     }
-
     .europe__tracker{
         padding-top: 0;
         flex: 1 1 270px;
         background: #2F343A;
         position: relative;
-
     }
     .arrow-left p {
         top: 265px;
         right: 60px;
     }
-    .line{
-        left:50%;
-        transform:translateX(-50%);
-    }
 
+    /*section services*/
     .services__title{
         text-align: center;
     }
 
-    .titles{
-        margin: 0 auto;
-        text-align: center;
-        padding-bottom: 15px;
-    }
+    /*section company*/
     .company__text{
         width: 100%;
     }
@@ -655,13 +672,16 @@ iframe{
         margin: 0 auto;
         padding-top: 20px;
     }
+
+    /*section maps*/
     .maps {
         margin-top: 40px;
     }
-
 }
 
 @media (max-width: 653px){
+
+    /*section europe*/
     .europe__titles{
         text-align: center;
     }
@@ -669,6 +689,7 @@ iframe{
         font-size: 32px;
     }
 
+    /*section transport*/
     .transport__block {
         padding-top: 55px;
         display: grid;
@@ -676,12 +697,12 @@ iframe{
         grid-template-rows: repeat(4,1fr);
     }
 
+    /*section company*/
     .company__block {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,1fr);
     }
-
    .company__text {
         display: inline-block;
         padding-bottom: 40px;
@@ -690,10 +711,14 @@ iframe{
 }
 
 @media (max-width: 600px){
+
+    /*section europe*/
     .arrow-left p {
         top: 200px;
         right: 40px;
     }
+
+    /*section footer*/
     .footer__inner{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -724,6 +749,7 @@ iframe{
 
 @media (max-width: 500px){
 
+    /*section europe*/
     .arrow{
         width: 45px;
         left: 55px;
@@ -735,7 +761,6 @@ iframe{
     .arrow-left .arrow:after, .arrow-left .arrow:before {
         right: 30px;
     }
-
     .arrow-left p {
         top: 200px;
         right: 60px;
@@ -747,6 +772,8 @@ iframe{
 
 
 @media (max-width: 450px){
+
+    /*section trucking*/
     .trucking__titles{
         margin-top: 0;
         margin-bottom: 0;
@@ -755,11 +782,20 @@ iframe{
         font-size:26px;
         line-height: 32px;
     }
+
+    /*section europe*/
+    .europe__tracker{
+        padding-top: 0;
+        flex: 1 1 180px;
+        background: #2F343A;
+        position: relative;
+    }
     .arrow-left p {
         top: 150px;
         right: 30px;
     }
 
+    /*section transport*/
     .transport__block {
         padding-top: 15px;
         display: grid;
@@ -772,12 +808,8 @@ iframe{
     .transport__block-item{
         border: 1px solid #C8A35F;
     }
-    .europe__tracker{
-        padding-top: 0;
-        flex: 1 1 180px;
-        background: #2F343A;
-        position: relative;
-    }
+
+    /*section company*/
     .company__block {
         padding-top: 20px;
         display: grid;
@@ -787,23 +819,30 @@ iframe{
 }
 
 @media (max-width: 414px) {
+
+    /*section top*/
     .nav-menu {
         top: 145px;
     }
-    .arrow-left p {
 
+    /*section europe*/
+    .arrow-left p {
         right: 20px;
     }
 }
 
 @media (max-width: 375px){
-  .header__contacts{
+
+    /*section header*/
+    .header__contacts{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
         font-size: 18px;
     }
+
+    /*section top*/
     .logo{
         padding-left: 50px;
         padding-top: 20px;
@@ -821,11 +860,11 @@ iframe{
     .map-link{
         font-size: 20px;
     }
-
    .nav-menu {
       top: 234px;
    }
 
+    /*section europe*/
     .arrow {
         display: block;
         position: absolute;
@@ -852,17 +891,30 @@ iframe{
     .pre, .nxt{
         font-size: 12px;
     }
+
+    /*section maps*/
     .maps {
         margin-top: 20px;
     }
 }
+
 @media (max-width: 281px){
+
+    /*section top*/
     .nav-menu {
         top: 246px;
     }
+
+    /*section trucking*/
     .trucking {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    /*section europe*/
+    .europe__titles-title {
+        font-size: 24px;
+        line-height: 28px;
     }
     .arrow {
         left: 65px;
@@ -874,14 +926,14 @@ iframe{
     .arrow-left .arrow {
         left: -65px;
     }
-    .europe__titles-title {
-        font-size: 24px;
-        line-height: 28px;
-    }
+
+    /*section transport*/
     .transport__block {
         padding-top: 15px;
         gap: 5px;
     }
+
+    /*section services*/
     .services__title {
         padding-top: 126px;
     }
@@ -889,6 +941,7 @@ iframe{
         margin-top: 86px;
     }
 
+    /*section footer*/
     .footer__tel{
         font-size: 12px;
     }
