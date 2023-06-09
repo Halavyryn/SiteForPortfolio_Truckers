@@ -4,7 +4,7 @@
 Использовались технологии HTML, CSS, JavaScript.<br>
 Сайт адаптивный и кроссбраузерный.<br>
 Файлы сайта проверены валидаторами от W3C(HTML&CSS)<br>
-Ссылка на сайт: [https://halavyryn.github.io/](https://halavyryn.github.io/Site-for-Truckers/#) <br>
+Ссылка на сайт: https://halavyryn.github.io/SiteForPortfolio_Truckers/ <br>
 Реализованы:
 1) Анимация кнопок;<br>
 2) Попапы;<br>
